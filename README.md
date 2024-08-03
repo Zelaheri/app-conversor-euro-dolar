@@ -1,6 +1,6 @@
-# `Conversor monetário automático`
+# Conversor monetário automático
 
-### Versões:
+### `Versões:`
 * v0.1 — Converte Dólar em Euro `Dólar($)⇌Euro(€)` automatico.
   - Independete de qual input for inserido um valor, ao mesmo tempo, aparecerá a conversão no input fora de foco.
   - Além disso, o código é facilmente modificável para implementação de outras moedas do mundo.
