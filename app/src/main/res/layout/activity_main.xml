@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText, Autofill">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:id="@+id/appLogo"
+        android:layout_height="200sp"
+        android:contentDescription="Moedas em ciclo"
+        android:src="@drawable/ic_launcher_foreground"
+        android:backgroundTint="@color/white"
+        android:layout_marginVertical="50sp"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <EditText
+            android:id="@+id/dolarBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30sp"
+            android:hint="Valor em Dólar ($)"
+            android:inputType="numberDecimal"
+            android:padding="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/euroBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30sp"
+            android:hint="Valor em Euro (€)"
+            android:inputType="numberDecimal"
+            android:padding="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/cotacaoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1 dólar"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" = "
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/cotacaoDolarEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0,92 euros"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1 euro"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" = "
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/cotacaoEuroDolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1,09 dólares"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dataCotacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(03/08/2024)"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</LinearLayout>
